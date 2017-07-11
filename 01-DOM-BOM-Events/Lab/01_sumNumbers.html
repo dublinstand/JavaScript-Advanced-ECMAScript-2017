@@ -1,0 +1,30 @@
+<!--
+Write a JS function that reads two numbers from input fields in a web page and puts their sum in another field when the user clicks on a button.
+Input/Output
+There will be no input/output, your program should instead modify the given HTML file.
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<input type="text" id="num1" /> +
+<input type="text" id="num2" /> =
+<input type="text" id="sum" readonly="readonly" />
+<input type="button" value="Calc" onclick="calc()" />
+
+<script>
+    function calc() {
+        let num1 = Number(document.getElementById("num1").value);
+        let num2 = Number(document.getElementById("num2").value);
+        let sum = num1 + num2;
+        document.getElementById("sum").value = sum;
+    }
+</script>
+
+</body>
+</html>
