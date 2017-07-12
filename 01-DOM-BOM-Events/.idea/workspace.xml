@@ -24,8 +24,8 @@
       <file leaf-file-name="01_sumNumbers.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab/01_sumNumbers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5161295">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
+            <state vertical-scroll-proportion="-7.806452">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="02_showMore.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab/02_showMore.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5161295">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="7" />
+            <state vertical-scroll-proportion="-13.4838705">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -46,19 +46,31 @@
       <file leaf-file-name="03_collectListItems.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab/03_collectListItems.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.032259">
-              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+            <state vertical-scroll-proportion="-19.161291">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04_colorizeTable.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04_colorizeTable.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab/04_colorizeTable.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20441347">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state vertical-scroll-proportion="-13.4838705">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="05_listOfItems.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lab/05_listOfItems.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.56213707">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <marker date="1499870161463" expanded="true" signature="663:668" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,6 +91,7 @@
         <option value="$PROJECT_DIR$/Lab/02_showMore.html" />
         <option value="$PROJECT_DIR$/Lab/03_collectListItems.html" />
         <option value="$PROJECT_DIR$/Lab/04_colorizeTable.html" />
+        <option value="$PROJECT_DIR$/Lab/05_listOfItems.html" />
       </list>
     </option>
   </component>
@@ -222,7 +235,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -262,16 +275,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Lab/01_sumNumbers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5161295">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
+        <state vertical-scroll-proportion="-7.806452">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab/02_showMore.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5161295">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="25" selection-end-column="7" />
+        <state vertical-scroll-proportion="-13.4838705">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -280,17 +293,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab/03_collectListItems.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.032259">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        <state vertical-scroll-proportion="-19.161291">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab/04_colorizeTable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20441347">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state vertical-scroll-proportion="-13.4838705">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab/05_listOfItems.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56213707">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <marker date="1499870161463" expanded="true" signature="663:668" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
