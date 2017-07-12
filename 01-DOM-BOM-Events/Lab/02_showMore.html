@@ -1,0 +1,27 @@
+<!--
+Write a JS function that expands a hidden section of text when a link is clicked. The link should disappear as the rest of the text shows up.
+Input/Output
+There will be no input/output, your program should instead modify the given HTML file.
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+Welcome to the "Show More Text Example".
+<a href="#" id="more" onclick= "showText()">Read more …</a>
+<span id="text" style= "display:none">Welcome to JavaScript and DOM.</span>
+<script>
+    function showText() {
+        document.getElementById("text").style.display = 'inline';
+        document.getElementById("more").style.display = 'none';
+    }
+</script>
+
+
+</body>
+</html>
