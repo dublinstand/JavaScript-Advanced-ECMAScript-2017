@@ -63,14 +63,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="05_listOfItems.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="05_listOfItems.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab/05_listOfItems.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56213707">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state vertical-scroll-proportion="-7.806452">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
-                <marker date="1499870161463" expanded="true" signature="663:668" placeholder="..." />
+                <marker date="1499870675677" expanded="true" signature="663:668" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06_addAndDelete.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lab/06_addAndDelete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31010452">
+              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,6 +102,7 @@
         <option value="$PROJECT_DIR$/Lab/03_collectListItems.html" />
         <option value="$PROJECT_DIR$/Lab/04_colorizeTable.html" />
         <option value="$PROJECT_DIR$/Lab/05_listOfItems.html" />
+        <option value="$PROJECT_DIR$/Lab/06_addAndDelete.html" />
       </list>
     </option>
   </component>
@@ -171,11 +182,14 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.04_colorizeTable.html">
+  <component name="RunManager" selected="JavaScript Debug.06_addAndDelete.html">
     <configuration default="false" name="03_collectListItems.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/01-DOM-BOM-Events/Lab/03_collectListItems.html">
       <method />
     </configuration>
     <configuration default="false" name="04_colorizeTable.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/01-DOM-BOM-Events/Lab/04_colorizeTable.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="06_addAndDelete.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/01-DOM-BOM-Events/Lab/06_addAndDelete.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -210,14 +224,16 @@
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.03_collectListItems.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.04_colorizeTable.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.06_addAndDelete.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.04_colorizeTable.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.03_collectListItems.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.06_addAndDelete.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.04_colorizeTable.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.03_collectListItems.html" />
       </list>
     </recent_temporary>
   </component>
@@ -309,11 +325,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab/05_listOfItems.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56213707">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state vertical-scroll-proportion="-7.806452">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
-            <marker date="1499870161463" expanded="true" signature="663:668" placeholder="..." />
+            <marker date="1499870675677" expanded="true" signature="663:668" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab/06_addAndDelete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31010452">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,64 @@
+<!--
+Extend the previous problem to display a [Delete] link after each list item.
+Clicking it, should delete the item with no confirmation.
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>List of Items</h1>
+<ul id="items"></ul>
+<input type="text" id="newText" />
+<input type="button" value="Add"
+       onclick="addItem()">
+<script>
+    function addItem() {
+        //this is the parent where we add our newly created <li>
+        let parent = document.querySelector('#items');
+
+        //create new element <li>
+        let newItem = document.createElement('li');
+
+        //this is our text from the input field that we want to assign its value to the content of <li>
+        let text = document.querySelector('#newText').value;
+
+        //add text to the new item
+        newItem.textContent = text;
+
+        //add a new span to the <li>
+        let span = document.createElement('span');
+        //we add to the inner html of the span <a> link with href='#' which means it returns to the same page
+        span.innerHTML = "<a href='#'>[Delete]</a>";
+        //for the first child of the span add an event listener for click and it triggers deleteItem() function
+        span.firstChild.addEventListener('click', deleteItem);
+
+        //append each new element to its parent
+        newItem.appendChild(span);
+        parent.appendChild(newItem);
+
+        //empty textField input
+        document.querySelector('#newText').value = '';
+
+
+        function deleteItem() {
+            //by using this we get the element we are performing the action on (in this example click)
+            //we want to delete the <li> element, which is parent of the span, so we use this.parentNode
+            //this will give us the innerHTML (this is where we click)
+            //the first parent will return us the span
+            //the second parent will get us into <li> - this is the element we want to remove
+            let li = this.parentNode.parentNode;
+
+            //we go in the parent node from <li> and removeChild(li)
+            let ul = li.parentNode;
+            ul.removeChild(li);
+
+
+        }
+    }
+</script>
+</body>
+</html>
