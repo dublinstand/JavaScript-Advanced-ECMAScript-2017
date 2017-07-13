@@ -1,0 +1,58 @@
+<!--
+Write a JS program that implements a web timer that supports minutes and seconds.
+The user should be able to control it with buttons. Clicking [Start] resets the timer back to zero.
+Only one of the buttons should be enabled at a time (you cannot stop the timer if it’s not running).
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="time" style="border:3px solid blue; text-align:center; font-size:2em; margin-bottom:10px">00:00</div>
+<button id="startBtn">Start</button>
+<button id="stopBtn" disabled="true">Stop</button>
+<script>window.onload = function () {
+    stopwatch();
+}</script>
+
+<script>
+    function stopwatch() {
+        let time, intervalID;
+        let startBtn = document.getElementById('startBtn');
+        let stopBtn = document.getElementById('stopBtn');
+
+        //add event listener on clicking on start button
+        startBtn.addEventListener('click', function () {
+            time = -1;
+            incrementTime();
+            intervalID = setInterval(incrementTime, 1000);
+            //change startBtn to disabled
+            startBtn.disabled = true;
+            //change stopBtn to enabled
+            stopBtn.disabled = false;
+        });
+
+        //add event listener on clicking on stop button
+        stopBtn.addEventListener('click', function () {
+            //clears the interval we set
+            clearInterval(intervalID);
+            //change startBtn to enabled
+            startBtn.disabled = false;
+            //change stopBtn to disabled
+            stopBtn.disabled = true;
+        });
+
+        function incrementTime() {
+            time++;
+            //increase the time on the clock
+            document.getElementById('time').textContent =
+                    ("0" + Math.trunc(time / 60)).slice(-2) +
+                    ':' + ("0" + (time % 60)).slice(-2);
+        }
+    }
+</script>
+</body>
+</html>

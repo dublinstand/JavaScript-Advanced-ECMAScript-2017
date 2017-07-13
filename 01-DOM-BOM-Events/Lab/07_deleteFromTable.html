@@ -1,0 +1,51 @@
+<!--
+Write a JS program that takes an e-mail from an input field and deletes matching rows from a table.
+If no entry is found, an error should be displayed in a <div> with ID "results".
+The error should read "Not found."
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table border="1" id="customers">
+    <tr><th>Name</th><th>Email</th></tr>
+    <tr><td>Eve</td><td>eve@gmail.com</td></tr>
+    <tr><td>Nick</td><td>nick@yahooo.com</td></tr>
+    <tr><td>Didi</td><td>didi@didi.net</td></tr>
+    <tr><td>Tedy</td><td>tedy@tedy.com</td></tr>
+</table>
+Email: <input type="text" name="email" />
+<button onclick="deleteByEmail()">Delete</button>
+<div id="result" ></div>
+<script>
+    function deleteByEmail(){
+        //we get all elements by Name email and take the first one from the list and its value
+        let email = document.getElementsByName('email')[0].value;
+
+        //we start from an element with id = customers, then go to <tr> and go to <td>
+        // with nth child with passing the parameter of 2 - td:nth-child(2)
+        //we get the second td, where the email is
+        let secondColumn = document.querySelectorAll("#customers tr td:nth-child(2)");
+        let result = document.getElementById("result");
+
+        for(let td of secondColumn){
+            if(td.textContent == email){
+                //we go to the tr from the td we have
+                let tr = td.parentNode;
+                //delete the whole <tr>
+                tr.parentNode.removeChild(tr);
+                result.textContent = "Deleted";
+            }
+            else{
+                result.textContent = "Not Found";
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -15,7 +15,7 @@ Write a JS function that read the text inside an input field and appends the spe
 <input type="button" value="Add" onclick="addItem()">
 <script>
     function addItem() {
-        let parent = document.querySelector('#items');
+        let parent = document.querySelector('ul#items');
         let newElement = document.createElement("li");
         newElement.textContent = document.querySelector("#newItemText").value;
         parent.appendChild(newElement);
