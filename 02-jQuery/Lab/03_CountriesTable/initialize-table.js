@@ -31,7 +31,7 @@ function initializeTable() {
         let upLink = $('<a href="#">[Up]</a>').click(moveUp);
         let downLink = $('<a href="#">[Down]</a>').click(moveDown);
 
-        //we create <td> and append upLink and deleteLink to it.
+        //we create <td> and append upLink, downLink with spaces in between and deleteLink to it.
         //tr appends the created <td>
         tr.append($("<td>")
                 .append(upLink)
