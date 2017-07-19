@@ -7,7 +7,7 @@ function extractText(){
 
     //we get all items found by selector tag = ul, id = items and get all its <li>
     //then put all elements into array (they are still tags)
-    //then for each <li>
+    //then for each <li> get the text and join them by ", "
     let items = $("ul#items li")
         .toArray()
         .map(li => li.textContent)
