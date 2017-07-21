@@ -1,0 +1,38 @@
+<!--
+You are tasked with creating a piece of HTML dynamically using JavaScript and appending it to a given element
+using a passed in selector.
+Your function will receive a string value representing a selector (for example "#wrapper" or ".root"),
+all elements created should be appended to the selector.
+The HTML you create should contain 4 elements:
+•	<textarea> with class="counter", value="0" and the disabled attribute.
+•	<button> with class="btn", id="incrementBtn" and text "Increment".
+•	<button> with class="btn", id="addBtn" and text "Add".
+•	Unordered list <ul> with class="results".
+When the [Increment] is clicked the value of the textarea should go up by one (if it was 0 it should become 1 e.t.c.).
+When the [Add] is clicked a new list item (<li>) with text equal to the current value of the textarea should be added
+to the unordered list.
+Submit in the judge the JS code (implementation) of the above function. It may hold other functions in its body.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Increment Counter</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="wrapper">
+</div>
+<script src="incrementCounter.js"></script>
+<script>
+    window.onload = function(){
+        increment("#wrapper");
+    }
+</script>
+</body>
+</html>
