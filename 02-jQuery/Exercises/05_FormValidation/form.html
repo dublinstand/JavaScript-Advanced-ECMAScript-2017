@@ -1,0 +1,76 @@
+<!--
+You are provided a skeleton containing the necessary files for your program.
+The validations should be as follows:
+•	The username needs to be between 3 and 20 symbols inclusively and only letters and numbers are allowed.
+•	The password and confirm-password must be between 5 and 15 inclusively symbols and only word characters are allowed (letters, numbers and _).
+•	The inputs of the password and confirm-password field must match.
+•	The email field must contain the “@” symbol and at least one "."(dot) after it.
+If the "Is company?" checkbox is checked, the CompanyInfo fieldset should become visible and the Company Number
+field must also be validated, if it isn’t checked the Company fieldset should have the style "display: none;" and the value of
+the Company Number field shouldn’t matter.
+•	The Company Number field must be a number between 1000 and 9999.
+Every field with an incorrect value when the [Submit] button is pressed should have the following style applied border-color: red;,
+alternatively if it’s correct it should have style border: none;. If there are required fields with an incorrect value when the [Submit]
+button is pressed, the div with id="valid" should become hidden ("display: none;"), alternatively if all fields are correct the div should
+become visible.
+Constraints
+•	You are NOT allowed to change the HTML or CSS files provided.
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="wrapper">
+    <form id="registerForm">
+        <fieldset id="userInfo">
+            <legend>User Information:</legend>
+            <div class="pairContainer">
+                <label for="username">Userame:</label>
+                <input id="username" type="text">
+            </div>
+            <div class="pairContainer">
+                <label for="email">Email:</label>
+                <input id="email" type="text">
+            </div>
+            <div class="pairContainer">
+                <label for="password">Password:</label>
+                <input id="password" type="password">
+            </div>
+            <div class="pairContainer">
+                <label for="confirm-password">Confirm Password:</label>
+                <input id="confirm-password" type="password">
+            </div>
+            <div class="pairContainer">
+                <label for="company">Is Company?</label>
+                <input id="company" type="checkbox">
+            </div>
+        </fieldset>
+        <fieldset id="companyInfo" style="display: none;">
+            <legend>Company Informaion:</legend>
+            <div class="pairContainer">
+                <label for="companyNumber">Company Number</label>
+                <input id="companyNumber" type="number">
+            </div>
+        </fieldset>
+        <button id="submit">Submit</button>
+    </form>
+    <div id="valid" style="display: none">Valid</div>
+</div>
+<script src="formValidation.js"></script>
+<script>
+    window.onload = function(){
+        validate();
+    }
+</script>
+</body>
+</html>

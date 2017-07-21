@@ -1,0 +1,70 @@
+<!--
+Write a JS function that generates a form for managing a list of
+items and inserts it in an HTML document by given selector (e.g. by div id).
+Your function will receive two arguments – the first is a selector to an HTML element, the second is a Boolean value,
+indicating whether the search function is case-sensitive. If set to true, searches are case sensitive, if set to false, or not set,
+searches ignore casing.
+The user must be able to:
+•	Add a new item with specified string content.
+•	Delete an existing element.
+•	Search for all elements containing a given string.
+Each of the controls must be in a separate div. Place the add controls inside a div with a class add-controls, and provide a label with the text
+ “Enter text:”, an empty input field and an anchor with the class button applied to it. The anchor acts as an add button and when the user presses
+  it, a new item must be added to the list, using the string in the input field as its name.
+Place the search controls inside a div with a class search-controls, and provide a label with the text "Search:" and an empty input field.
+When the user starts typing, the list of items should display only the items that contain the given string. The search is case-sensitive only
+if specified with an argument. When nothing is entered, the list will contain all elements.
+Place the result controls inside a div with a class result-controls and in a list of class items-list. Each element has the class list-item.
+When the list is filtered with a search, all elements that need to be left out must be applied a style of display:none;. Don’t forget to remove
+the style after the search string is removed!
+Every element is composed of an anchor with inner text "X" functioning as a delete button and its name wrapped in a <strong> tag. The anchor
+has the class button. When the button is clicked, the element is deleted from the list.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Search</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+    <style>
+        .add-controls, .search-controls {
+            width: 20em;
+            height: 2em;
+        }
+        input {
+            position: absolute;
+            left:6em;
+        }
+        .button {
+            background-color: darkgrey;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            left: 15em;
+            border: 1px solid black;
+            padding: 0 5px 0 5px;
+        }
+        .result-controls .button {
+            position: relative;
+            left: 0;
+            font-size: 50%;
+            margin-right:1em;
+            padding: 0;
+            bottom: 3px;
+        }
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<div id="content"></div>
+<script src="dom-search.js"></script>
+<script>
+    domSearch("#content",false);
+</script>
+</body>
+</html>
