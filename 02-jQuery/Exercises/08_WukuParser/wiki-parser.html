@@ -1,0 +1,50 @@
+<!--
+You are tasked by Wikipedia to write a JS program that parses text according to their internal markup in the browser.
+Your program will receive a selector to a paragraph of text and has to scan it for special symbol combinations that
+denote specific style for the text that is enclosed in them.
+For instance, text surrounded by double single quotes (''text'') must be displayed in italics. Look bellow for a full list of features.
+Your function will receive a selector to an HTML element.
+Markup
+The following symbols must be recognized and parsed:
+•	''text'' becomes <i>text</i> (two single quotes)
+•	'''text''' becomes <b>text</b> (three single quotes)
+•	=text=, ==text== and ===text=== become <h1>text</h1>, <h2>text</h2> and <h3>text</h3>
+•	[[link]] becomes an anchor to /wiki/link with the same text, <a href="/wiki/link">link</a>
+•	[[link|Text]] becomes an anchor to /wiki/link with the argument after the pipe as text, <a href="/wiki/link">Text</a>
+Note all resulting hyperlinks are relative to /wiki
+Constraints
+•	There will be no overlapping markup, i.e. there won’t be bold text inside a heading or a link
+•	All hyperlinks will only consist of valid characters
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki Parser</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+    <p id="wiki">
+        =Document title=
+        ==First segment==
+        '''bold 1''' word ''italics 1'' '''bold2'''
+        [[hyper first]] '''Bold three''' ''italics2'''
+        word [[hyper2]] [[hyperlink2|with Label]]
+        ==Second segment==
+        ===Third segment===
+        word '''word'''[[pipe|bomb]]
+    </p>
+</div>
+<script src="wiki-parser.js"></script>
+<script>
+    window.onload = function(){
+        wikiParser('#wiki');
+    }
+</script>
+</body>
+</html>

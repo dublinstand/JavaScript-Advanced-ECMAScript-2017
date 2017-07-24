@@ -1,0 +1,51 @@
+<!--
+Write a program that generates a monthly calendar by given date.
+It should be formatted as an HTML table with a caption for the month and year and headings for each column for the days of the week.
+The current date must be highlighted with a different style than the rest of the table cells.
+•	Current month and year are listed in a <caption> element with the month displayed as a full capitalized name and the year with all digits;
+•	The first row contains headings for the days of the week, shortened to 3 letters: Mon, Tue, Wed, etc.;
+•	Each week is a complete row – pad the week with empty cells (empty string as cell content) if the month doesn’t start on a Monday or end on a Sunday;
+•	The table should contain only as many rows as needed – some months may need 6 weeks, others just 5.
+Hints
+•	JavaScript has a built-in Date object, which can be used to construct a date with arguments and then extract the current day of the week using the getDay() method. You can familiarize yourself with the object properties here: http://www.w3schools.com/jsref/jsref_obj_date.asp
+•	Try setting the day of the month to 0 and see what the result will be.
+•	Notice that the passed in arguments in the example [15, 1, 2017] correspond to 15th January 2017
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 0.25em;
+            margin: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        th, td {
+            width: 2.5em;
+        }
+        .today {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+</div>
+<script src="calendar.js"></script>
+<script>
+    window.onload = function(){
+        calendar([15,1,2017]);
+    }
+</script>
+</body>
+</html>

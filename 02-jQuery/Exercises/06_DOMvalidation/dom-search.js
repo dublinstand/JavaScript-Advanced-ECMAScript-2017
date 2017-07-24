@@ -3,6 +3,7 @@ function domSearch(selector, isCaseSensitive) {
 
     let addDiv = ($('<div>').addClass('add-controls'));
 
+    //must be careful with the brackets () which element under which is
     addDiv.append($('<label>').text('Enter text: ').append($('<input>')))
         .append($('<a>').addClass('button').text('Add').on('click', addItem));
     container.append(addDiv);
