@@ -52,7 +52,6 @@ function domSearch(selector, isCaseSensitive) {
         listItems.each((index, li) => matches(li, textToMatch));
     }
 
-
     function matches(li, textToMatch) {
         //show all items first
         $(li).css('display', 'block');
@@ -72,6 +71,4 @@ function domSearch(selector, isCaseSensitive) {
             }
         }
     }
-
-
 }
