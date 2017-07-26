@@ -16,9 +16,15 @@ function aggregates(array){
 }
 
 
+//This is our function reducer that can match all elements and pick the min or max, or add, multiply, etc.
 function reduce(arr, func){
+    //we get the first value from the array
     let result = arr[0];
+
+    //loop through all elements and remove its first element because it is already assigned to our result
     for(let nextElement of arr.slice(1)){
+        //the new result will be calling the function we pass as argument and passing the nextElement and current result
+        //as arguments
         result = func(result, nextElement);
     }
 
