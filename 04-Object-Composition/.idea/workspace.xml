@@ -24,8 +24,30 @@
       <file leaf-file-name="01_orderRectangle.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lab/01_orderRectangle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59965926">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7376491">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02_fibonacciNumbersWithClosure.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab/02_fibonacciNumbersWithClosure.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03_listProcessor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab/03_listProcessor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -45,6 +67,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Lab/02_fibonacciNumbers.js" />
+        <option value="$PROJECT_DIR$/Lab/02_fibonacciNumbersWithClosure.js" />
+        <option value="$PROJECT_DIR$/Lab/03_listProcessor.js" />
         <option value="$PROJECT_DIR$/Lab/01_orderRectangle.js" />
       </list>
     </option>
@@ -122,9 +147,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../03-First-Class-Functions" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.01_orderRectangle.js">
+  <component name="RunManager" selected="Node.js.03_listProcessor.js">
     <configuration default="false" name="01_orderRectangle.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="01_orderRectangle.js" working-dir="$PROJECT_DIR$/Lab">
+      <method />
+    </configuration>
+    <configuration default="false" name="02_fibonacciNumbersWithClosure.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="02_fibonacciNumbersWithClosure.js" working-dir="$PROJECT_DIR$/Lab">
+      <method />
+    </configuration>
+    <configuration default="false" name="03_listProcessor.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="03_listProcessor.js" working-dir="$PROJECT_DIR$/Lab">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -159,12 +191,16 @@
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Node.js.01_orderRectangle.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.02_fibonacciNumbersWithClosure.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.03_listProcessor.js" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.01_orderRectangle.js" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.03_listProcessor.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.01_orderRectangle.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.02_fibonacciNumbersWithClosure.js" />
       </list>
     </recent_temporary>
   </component>
@@ -205,14 +241,45 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Lab/03_listProcessor.js</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="list" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Lab/03_listProcessor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab/02_fibonacciNumbersWithClosure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lab/01_orderRectangle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59965926">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7376491">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
