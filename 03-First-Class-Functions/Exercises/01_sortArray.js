@@ -22,7 +22,7 @@ function sortArray(array, sortType){
     };
 
     let descendingOrder = function (a, b) {
-      return a + b;
+      return b - a;
     };
 
     //We can now pass either of them to the sorting function, depending on what we need. We’ll save those in an
