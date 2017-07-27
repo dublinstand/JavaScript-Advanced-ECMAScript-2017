@@ -7,7 +7,6 @@ function fibonacciNumbersWithClosure(n){
     for (let i = 0; i < n; i++) {
         fibArray.push(fib());
     }
-
     return fibArray;
 }
 

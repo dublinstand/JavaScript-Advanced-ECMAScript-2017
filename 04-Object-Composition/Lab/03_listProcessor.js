@@ -8,7 +8,7 @@
 //For every print command - you should print on the console the inner collection joined by ", "
 
 
-function listProcessor(input){
+function listProcessor(commands){
     let commandProcessor = (function(){
         let list = [];
 
@@ -23,7 +23,7 @@ function listProcessor(input){
         }
     })();
 
-    for(let cmd of input){
+    for(let cmd of commands){
         let [action, data] = cmd.split(' ');
         commandProcessor[action](data);
     }
