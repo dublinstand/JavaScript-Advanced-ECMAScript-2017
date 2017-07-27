@@ -10,7 +10,6 @@
 // use order of appearance. Don’t print anything for types that do not appear in the list of arguments.
 
 function argumentsInfo(){
-
     let summary = [];
 
     //javascript holds all arguments passed in their ARGUMENTS variable that we can loop through
@@ -27,23 +26,18 @@ function argumentsInfo(){
             summary[type]++;
         }
     }
-
     //Since object properties cannot be sorted, and even if they could, different JavaScript implementations iterate
     //the order differently, we need to transfer the information to an array of key-value pairs.
     //We could use a Map instead of an object, but this cannot be sorted either, so we’ll end up with an array in the end anyway
-
     let sortedSummary = [];
 
     //we push the values as an array - the type, and the value in the summary for that type
-
     for (let type in summary){
         sortedSummary.push([type, summary[type]]);
     }
-
     //Note we are pushing an array with two values to the array which needs to be sorted.
     //Later when we implement a sorting function, we’ll use the second value of the key-value pair – the number of occurrences.
     //All we need to do after the array is sorted is to output the information in the correct format.
-
 
     //compare the count property (which is the second element in the array) and compare it to the next
     //if b[1] - a[1] is less than zero, b goes before a and we order them in descending order - 3 , 2 , 1
