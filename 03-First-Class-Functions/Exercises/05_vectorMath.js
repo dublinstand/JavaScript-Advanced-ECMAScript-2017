@@ -24,7 +24,7 @@ let solution = (() => {
     let dot = (vec1, vec2) => vec1[0] * vec2[0] + vec1[1] * vec2[1];
     let cross = (vec1, vec2) => vec1[0] * vec2[1] - vec1[1] * vec2[0];
 
-    //we need to return each function
+    //we need to return each function in an object
     return {add, multiply, length, dot, cross};
 })();
 
