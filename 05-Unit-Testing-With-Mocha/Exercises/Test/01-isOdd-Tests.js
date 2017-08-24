@@ -1,6 +1,6 @@
 //we enter chai framework to use expect
 let expect = require("chai").expect;
-//we get the module 01-sumArray that we will test
+
 let isOddOrEven = require("../01-isOdd").isOddOrEven;
 
 describe("isOdd function - displaying odd, even or undefined", function(){
